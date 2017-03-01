@@ -11,7 +11,7 @@
 
 
 
-###### Start Quizing!
+###### Let's Get Started!
 
 Here is an example of a JSON file. 
 ```
