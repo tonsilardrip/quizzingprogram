@@ -82,7 +82,7 @@ app.factory('quizFactory', function() {
 			options: ["Synchronize Data between the model and controller", "Synchronize Data between the model and the view", "Synchronize Data between the view and controlle", "Doesn't synchronize data between the two"],
 			answer: 1
 		}
-	];
+	]; 
 
 	return {
 		getQuestion: function(id) {

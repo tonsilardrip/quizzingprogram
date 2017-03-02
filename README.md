@@ -15,11 +15,44 @@
 
 Here is an example of a JSON file. 
 ```
+{
+     "firstName": "Casper",
+     "lastName": "Casper",
+     "age": 18,
+     "address":
+     {
+         "streetAddress": "1234 Russel Blvd",
+         "city": "Texas",
+         "state": "TX",
+         "postalCode": "79xxx"
+     },
+     "phoneNumber":
+     [
+         {
+           "type": "home",
+           "number": "212 555-1234"
+         },
+         {
+           "type": "fax",
+           "number": "646 555-4567"
+         }
+     ]
+ }
 
 ```
 
 
 Here is an example of Local Storage
 ```
+myModule.controller("MainController", ['$scope', 'LocalStorageService', 
+                function($scope, LocalStorageService) {
+                
+myModule.factory("LocalStorageService", function($window, $rootScope) {
+    
+    angular.element($window).on('storage', function(event) {
+        if (event.key === 'my-storage') {
+            $rootScope.$apply();
+        }
+    });  
 
 ```

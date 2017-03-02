@@ -1,5 +1,3 @@
 git init
-git add README.md
-git commit -am "first commit"
-git remote add origin git@github.com:tonsilardrip/quizzingprogram.git
+git commit -am "Final commit"
 git push -u origin master
